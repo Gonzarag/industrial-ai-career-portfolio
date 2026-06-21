@@ -20,6 +20,7 @@ I am interested in applying digital tools to solve practical engineering problem
 * Process optimization
 * Energy and production performance analysis
 * Data-driven operational improvement
+* Responsible AI workflows for engineering documentation
 
 ---
 
@@ -44,6 +45,7 @@ Automation tools that reduce repetitive manual reporting work and improve consis
 
 Example projects:
 
+* Engineering Report Generator
 * Automated production report generator
 * Excel report automation
 * Shift summary automation
@@ -79,12 +81,57 @@ Example projects:
 
 ## Featured Projects
 
-| Project                        | Category          |  Status | Description                                                        |
-| ------------------------------ | ----------------- | ------: | ------------------------------------------------------------------ |
-| Production KPI Dashboard       | Dashboards        | Planned | Dashboard for tracking production, downtime, yield, and efficiency |
-| Automated Production Report    | Report Automation | Planned | Script-based workflow for generating daily production reports      |
-| Process Anomaly Detection Demo | Anomaly Detection | Planned | Detects abnormal process behavior using sample sensor data         |
-| Quality Prediction Model       | Prediction Models | Planned | Predicts product quality outcome from process variables            |
+| Project | Category | Status | Description |
+|---|---|---:|---|
+| Engineering Report Generator | Report Automation | Complete MVP | Python tool for generating Process Capability, MSA/Gauge R&R, RCA, and SOP technical report drafts with privacy-aware AI review workflow |
+| Production KPI Dashboard | Dashboards | Planned | Dashboard for tracking production, downtime, yield, and efficiency |
+| Automated Production Report | Report Automation | Planned | Script-based workflow for generating daily production reports |
+| Process Anomaly Detection Demo | Anomaly Detection | Planned | Detects abnormal process behavior using sample sensor data |
+| Quality Prediction Model | Prediction Models | Planned | Predicts product quality outcome from process variables |
+
+---
+
+## Featured Project: Engineering Report Generator
+
+**Engineering Report Generator** is the first completed MVP project in this portfolio.
+
+It demonstrates how Python and responsible AI workflows can support technical reporting in process engineering.
+
+Implemented report workflows:
+
+* Process Capability Cp/Cpk Study
+* Measurement Systems Analysis / Gauge R&R Report
+* Root Cause Analysis Report
+* Standard Operating Procedure Technical Draft
+
+Key features:
+
+* Input preparation reports
+* Privacy and sensitivity screening
+* Local pseudonymization dictionary
+* Internal and external report separation
+* AI review prompt generation
+* Human engineering review checklists
+* Synthetic example data only
+* Automated tests
+
+Project folder:
+
+```text
+projects/report-automation/engineering-report-generator/
+```
+
+Case study:
+
+```text
+case-studies/engineering-report-generator.md
+```
+
+Screenshots:
+
+```text
+assets/screenshots/engineering-report-generator/
+```
 
 ---
 
@@ -93,11 +140,14 @@ Example projects:
 ```text
 industrial-ai-career-portfolio/
 ├── assets/
+│   └── screenshots/
+│       └── engineering-report-generator/
 ├── docs/
 ├── templates/
 ├── projects/
 │   ├── dashboards/
 │   ├── report-automation/
+│   │   └── engineering-report-generator/
 │   ├── anomaly-detection/
 │   └── prediction-models/
 ├── case-studies/
@@ -130,13 +180,14 @@ Screenshots and visual outputs are stored in:
 assets/screenshots/
 ```
 
-Each project README should include a screenshot section showing:
+For the Engineering Report Generator, screenshots include:
 
-* Dashboard previews
-* Charts
-* Report examples
-* Model output examples
-* Before-and-after workflow images
+* Capability histogram
+* Capability run chart
+* MSA average by part chart
+* MSA average by operator chart
+* Example generated report preview
+* Example privacy-aware workflow output
 
 ---
 
@@ -168,13 +219,14 @@ case-studies/
 * Create repository structure
 * Add project templates
 * Add documentation standards
-* Create first dashboard project
+* Complete first report automation project
 * Add screenshots and case study format
 
 ### Phase 2: Dashboards and Reporting
 
 * Build production KPI dashboard
 * Build OEE dashboard
+* Improve Engineering Report Generator interface
 * Create automated production report
 * Automate CSV-to-report workflow
 
@@ -204,13 +256,17 @@ case-studies/
 
 ## Tools and Technologies
 
-Planned tools:
+Current and planned tools:
 
 * Python
 * Pandas
 * NumPy
+* SciPy
 * Matplotlib
-* Plotly or Streamlit
+* Typer
+* Pytest
+* Streamlit
+* Plotly
 * Scikit-learn
 * Excel
 * SQL basics
